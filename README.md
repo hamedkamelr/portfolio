@@ -11,6 +11,8 @@
 
 [Live Demo](#deployment) · [Report Bug](https://github.com/hamedkamelr/portfolio/issues) · [Contact](mailto:hamed.kamel35@gmail.com)
 
+![Portfolio Screenshot](public/screenshot.png)
+
 </div>
 
 ---
