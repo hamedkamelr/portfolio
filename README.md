@@ -34,7 +34,7 @@ Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and style
 - **Interactive timeline** — alternating career cards with colour-coded indicators
 - **Project showcase** — 3-column card grid with gradient headers and status badges
 - **Local AI chatbot** — keyword-matching assistant, no API key, no internet required
-- **Optional Claude AI** — drop in an Anthropic API key to upgrade to streaming LLM responses
+- **Optional AI upgrade** — drop in an Anthropic API key to upgrade to streaming LLM responses
 - **Zero external dependencies** — runs entirely offline once installed
 
 ---
@@ -47,7 +47,7 @@ Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and style
 | Language | TypeScript 5 |
 | Styling | Tailwind CSS 3.4 + custom CSS animations |
 | Fonts | Space Grotesk · Inter (Google Fonts) |
-| AI (optional) | Anthropic Claude via `@anthropic-ai/sdk` |
+| AI (optional) | Anthropic API via `@anthropic-ai/sdk` |
 
 ---
 
@@ -82,7 +82,7 @@ app/
 ├── layout.tsx              # Root layout, metadata, Google Fonts
 ├── page.tsx                # Main page — imports all sections
 ├── globals.css             # Design tokens, animations, utility classes
-├── api/chat/route.ts       # Optional: Claude AI streaming endpoint
+├── api/chat/route.ts       # Optional: AI streaming endpoint
 └── components/
     ├── Navigation.tsx      # Fixed top bar with smooth-scroll links
     ├── Hero.tsx            # Full-screen hero with typing animation
@@ -104,7 +104,7 @@ The chatbot runs **entirely in the browser** — no server, no API key, no inter
 It uses a keyword-scoring engine with 20 intent categories covering:
 current role, experience, skills, AI projects, Azure/cloud, Power BI, education, certifications, contact info, publications, and more.
 
-### Upgrading to Claude AI (optional)
+### Upgrading to AI (optional)
 
 1. Get an API key from [console.anthropic.com](https://console.anthropic.com)
 2. Create `.env.local` in the project root:
