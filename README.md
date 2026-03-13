@@ -53,27 +53,10 @@ Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and style
 
 ## Getting Started
 
-### Prerequisites
 
-- Node.js **v18+** — [nodejs.org](https://nodejs.org)
+visit the live site: **[https://portfolio-jade-omega-5owes53s9t.vercel.app](https://portfolio-jade-omega-5owes53s9t.vercel.app)**
 
-### Installation
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/hamedkamelr/portfolio.git
-cd portfolio
-
-# 2. Install dependencies
-npm install
-
-# 3. Start the development server
-npm run dev
-```
-
-Or visit the live site: **[https://portfolio-jade-omega-5owes53s9t.vercel.app](https://portfolio-jade-omega-5owes53s9t.vercel.app)**
-
-For local development, open [http://localhost:3003](http://localhost:3003) in your browser.
+local development, open [http://localhost:3003](http://localhost:3003) 
 
 ---
 
