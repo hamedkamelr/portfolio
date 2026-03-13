@@ -89,16 +89,7 @@ The chatbot runs **entirely in the browser** — no server, no API key, no inter
 It uses a keyword-scoring engine with 20 intent categories covering:
 current role, experience, skills, AI projects, Azure/cloud, Power BI, education, certifications, contact info, publications, and more.
 
-### Upgrading to AI (optional)
 
-1. Get an API key from [console.anthropic.com](https://console.anthropic.com)
-2. Create `.env.local` in the project root:
-   ```
-   ANTHROPIC_API_KEY=sk-ant-your-key-here
-   ```
-3. Restart the dev server — the `/api/chat` route activates automatically
-
----
 
 ## Customisation
 
@@ -117,29 +108,7 @@ current role, experience, skills, AI projects, Azure/cloud, Power BI, education,
 
 ---
 
-## Deployment
 
-### Vercel (recommended)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hamedkamelr/portfolio)
-
-1. Click the button above or import the repo at [vercel.com/new](https://vercel.com/new)
-2. Add `ANTHROPIC_API_KEY` in environment variables (optional)
-3. Deploy — no configuration needed
-
-### Static Export
-
-For GitHub Pages, Netlify, or Cloudflare Pages (local chatbot only):
-
-```js
-// next.config.js
-const nextConfig = { output: 'export' }
-module.exports = nextConfig
-```
-
-```bash
-npm run build   # generates the 'out/' folder
-```
 
 ---
 
