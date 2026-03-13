@@ -9,7 +9,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-[Live Demo](https://hamedkamelr.vercel.app) · [Report Bug](https://github.com/hamedkamelr/portfolio/issues) · [Contact](mailto:hamed.kamel35@gmail.com)
+[Live Demo](https://portfolio-jade-omega-5owes53s9t.vercel.app) · [Report Bug](https://github.com/hamedkamelr/portfolio/issues) · [Contact](mailto:hamed.kamel35@gmail.com)
 
 ![Portfolio Screenshot](public/screenshot.png)
 
@@ -71,7 +71,9 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3003](http://localhost:3003) in your browser.
+Or visit the live site: **[https://portfolio-jade-omega-5owes53s9t.vercel.app](https://portfolio-jade-omega-5owes53s9t.vercel.app)**
+
+For local development, open [http://localhost:3003](http://localhost:3003) in your browser.
 
 ---
 
