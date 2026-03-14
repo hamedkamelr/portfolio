@@ -47,7 +47,6 @@ Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and style
 | Language | TypeScript 5 |
 | Styling | Tailwind CSS 3.4 + custom CSS animations |
 | Fonts | Space Grotesk · Inter (Google Fonts) |
-| AI (optional) | Anthropic API via `@anthropic-ai/sdk` |
 
 ---
 
