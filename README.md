@@ -56,7 +56,7 @@ Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and style
 
 visit the live site: **[https://portfolio-jade-omega-5owes53s9t.vercel.app](https://portfolio-jade-omega-5owes53s9t.vercel.app)**
 
-local development, [http://localhost:3003](http://localhost:3003) 
+local development, [http://localhost:3003](http://localhost:3001) 
 
 ---
 
