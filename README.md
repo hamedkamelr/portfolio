@@ -53,7 +53,7 @@ Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and style
 
 ## Getting Started
 
-Visit the live site: **[https://portfolio-jade-omega-5owes53s9t.vercel.app](https://portfolio-jade-omega-5owes53s9t.vercel.app)**
+Visit the live site: **[https://portfolio-phi-sepia-33.vercel.app/](https://portfolio-phi-sepia-33.vercel.app/)**
 
 Or run locally:
 
@@ -62,8 +62,7 @@ npm install
 npm run dev
 ```
 
-Then open **[http://localhost:3001](http://localhost:3001)** in your browser.
-
+Localhost **[http://localhost:3001](http://localhost:3001)** 
 ---
 
 ## Project Structure
