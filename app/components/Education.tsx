@@ -9,9 +9,9 @@ const education = [
     period: 'Feb 2022 – Jan 2024',
     location: 'Brisbane, QLD',
     note: 'Thesis: Deep Learning for Alzheimer\'s Prediction (98% accuracy)',
-    gradient: 'from-[#00d4ff]/20 to-[#7c3aed]/10',
-    border: 'border-[rgba(0,212,255,0.2)]',
-    badge: 'bg-[rgba(0,212,255,0.1)] text-[#00d4ff]',
+    gradient: 'from-[#4f8ef7]/20 to-[#d4a843]/10',
+    border: 'border-[rgba(79,142,247,0.2)]',
+    badge: 'bg-[rgba(79,142,247,0.1)] text-[#4f8ef7]',
     icon: '🎓',
   },
   {
@@ -20,9 +20,9 @@ const education = [
     period: 'Sep 2021 – Dec 2021',
     location: 'Online',
     note: 'Advanced analytics and quantitative methods',
-    gradient: 'from-[#7c3aed]/20 to-[#00ff88]/10',
-    border: 'border-[rgba(124,58,237,0.2)]',
-    badge: 'bg-[rgba(124,58,237,0.1)] text-[#a78bfa]',
+    gradient: 'from-[#d4a843]/20 to-[#94a3b8]/10',
+    border: 'border-[rgba(212,168,67,0.2)]',
+    badge: 'bg-[rgba(212,168,67,0.1)] text-[#d4a843]',
     icon: '📐',
   },
   {
@@ -31,9 +31,9 @@ const education = [
     period: '2014 – 2016',
     location: 'Iran',
     note: 'Published research on SME entrepreneurial skills',
-    gradient: 'from-[#00ff88]/20 to-[#00d4ff]/10',
-    border: 'border-[rgba(0,255,136,0.2)]',
-    badge: 'bg-[rgba(0,255,136,0.1)] text-[#00ff88]',
+    gradient: 'from-[#94a3b8]/20 to-[#4f8ef7]/10',
+    border: 'border-[rgba(148,163,184,0.2)]',
+    badge: 'bg-[rgba(148,163,184,0.1)] text-[#94a3b8]',
     icon: '💼',
   },
   {
@@ -42,7 +42,7 @@ const education = [
     period: '2017',
     location: 'Istanbul, Turkey',
     note: 'Certificate in English Language Teaching to Adults',
-    gradient: 'from-[#fb923c]/20 to-[#7c3aed]/10',
+    gradient: 'from-[#fb923c]/20 to-[#d4a843]/10',
     border: 'border-[rgba(251,146,60,0.2)]',
     badge: 'bg-[rgba(251,146,60,0.1)] text-[#fb923c]',
     icon: '🌐',
@@ -62,35 +62,35 @@ const certifications = [
     code: 'AZ-900',
     org: 'Microsoft',
     icon: '☁️',
-    color: 'bg-[rgba(0,212,255,0.08)] border-[rgba(0,212,255,0.25)] text-[#00d4ff]',
+    color: 'bg-[rgba(79,142,247,0.08)] border-[rgba(79,142,247,0.25)] text-[#4f8ef7]',
   },
   {
     name: 'Power BI Cert Prep',
     code: 'Series I',
     org: 'Microsoft Learn',
     icon: '📈',
-    color: 'bg-[rgba(0,212,255,0.08)] border-[rgba(0,212,255,0.25)] text-[#00d4ff]',
+    color: 'bg-[rgba(79,142,247,0.08)] border-[rgba(79,142,247,0.25)] text-[#4f8ef7]',
   },
   {
     name: 'Power BI Cert Prep',
     code: 'Series II',
     org: 'Microsoft Learn',
     icon: '📉',
-    color: 'bg-[rgba(0,212,255,0.08)] border-[rgba(0,212,255,0.25)] text-[#00d4ff]',
+    color: 'bg-[rgba(79,142,247,0.08)] border-[rgba(79,142,247,0.25)] text-[#4f8ef7]',
   },
   {
     name: 'Power BI Cert Prep',
     code: 'Series III',
     org: 'Microsoft Learn',
     icon: '🗂️',
-    color: 'bg-[rgba(0,212,255,0.08)] border-[rgba(0,212,255,0.25)] text-[#00d4ff]',
+    color: 'bg-[rgba(79,142,247,0.08)] border-[rgba(79,142,247,0.25)] text-[#4f8ef7]',
   },
   {
     name: 'Deep Learning Specialisation',
     code: 'Research',
     org: 'USQ',
     icon: '🧠',
-    color: 'bg-[rgba(124,58,237,0.08)] border-[rgba(124,58,237,0.25)] text-[#a78bfa]',
+    color: 'bg-[rgba(212,168,67,0.08)] border-[rgba(212,168,67,0.25)] text-[#d4a843]',
   },
 ]
 
@@ -191,7 +191,7 @@ export default function Education() {
         </div>
 
         {/* Publications Note */}
-        <div className="reveal mt-16 glass-card p-6 border border-[rgba(124,58,237,0.2)] max-w-3xl mx-auto text-center">
+        <div className="reveal mt-16 glass-card p-6 border border-[rgba(79,142,247,0.2)] max-w-3xl mx-auto text-center">
           <div className="text-2xl mb-3">📄</div>
           <h4 className="font-heading font-semibold text-white mb-2">Publication</h4>
           <p className="text-slate-300 text-sm leading-relaxed">

@@ -97,22 +97,22 @@ const experiences: TimelineItem[] = [
 
 const colorMap = {
   cyan: {
-    dot: 'bg-[#00d4ff] shadow-[0_0_12px_rgba(0,212,255,0.6)]',
-    border: 'border-[rgba(0,212,255,0.25)]',
-    badge: 'bg-[rgba(0,212,255,0.1)] text-[#00d4ff] border-[rgba(0,212,255,0.3)]',
-    tag: 'bg-[rgba(0,212,255,0.06)] text-[#00d4ff] border-[rgba(0,212,255,0.2)]',
+    dot: 'bg-[#4f8ef7] shadow-[0_0_12px_rgba(79,142,247,0.6)]',
+    border: 'border-[rgba(79,142,247,0.25)]',
+    badge: 'bg-[rgba(79,142,247,0.1)] text-[#4f8ef7] border-[rgba(79,142,247,0.3)]',
+    tag: 'bg-[rgba(79,142,247,0.06)] text-[#4f8ef7] border-[rgba(79,142,247,0.2)]',
   },
   purple: {
-    dot: 'bg-[#7c3aed] shadow-[0_0_12px_rgba(124,58,237,0.6)]',
-    border: 'border-[rgba(124,58,237,0.25)]',
-    badge: 'bg-[rgba(124,58,237,0.1)] text-[#a78bfa] border-[rgba(124,58,237,0.3)]',
-    tag: 'bg-[rgba(124,58,237,0.06)] text-[#a78bfa] border-[rgba(124,58,237,0.2)]',
+    dot: 'bg-[#d4a843] shadow-[0_0_12px_rgba(212,168,67,0.6)]',
+    border: 'border-[rgba(212,168,67,0.25)]',
+    badge: 'bg-[rgba(212,168,67,0.1)] text-[#d4a843] border-[rgba(212,168,67,0.3)]',
+    tag: 'bg-[rgba(212,168,67,0.06)] text-[#d4a843] border-[rgba(212,168,67,0.2)]',
   },
   green: {
-    dot: 'bg-[#00ff88] shadow-[0_0_12px_rgba(0,255,136,0.6)]',
-    border: 'border-[rgba(0,255,136,0.25)]',
-    badge: 'bg-[rgba(0,255,136,0.1)] text-[#00ff88] border-[rgba(0,255,136,0.3)]',
-    tag: 'bg-[rgba(0,255,136,0.06)] text-[#00ff88] border-[rgba(0,255,136,0.2)]',
+    dot: 'bg-[#94a3b8] shadow-[0_0_12px_rgba(148,163,184,0.6)]',
+    border: 'border-[rgba(148,163,184,0.25)]',
+    badge: 'bg-[rgba(148,163,184,0.1)] text-[#94a3b8] border-[rgba(148,163,184,0.3)]',
+    tag: 'bg-[rgba(148,163,184,0.06)] text-[#94a3b8] border-[rgba(148,163,184,0.2)]',
   },
 }
 
@@ -156,7 +156,7 @@ export default function Timeline() {
           <div className="hidden lg:block timeline-line" />
 
           {/* Mobile left line */}
-          <div className="lg:hidden absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#00d4ff] via-[#7c3aed] to-[#00ff88]" />
+          <div className="lg:hidden absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#4f8ef7] via-[#d4a843] to-[#94a3b8]" />
 
           <div className="space-y-12">
             {experiences.map((exp, i) => {
@@ -194,7 +194,7 @@ export default function Timeline() {
                         )}
                       </div>
                       <h3 className="font-heading font-bold text-white text-lg mb-1">{exp.role}</h3>
-                      <p className="text-[#00d4ff] font-semibold text-sm mb-1">{exp.company}</p>
+                      <p className="text-[#4f8ef7] font-semibold text-sm mb-1">{exp.company}</p>
                       <div className="flex flex-wrap gap-3 text-slate-500 text-xs mb-4">
                         <span className="flex items-center gap-1">
                           <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -212,7 +212,7 @@ export default function Timeline() {
                       <ul className="space-y-1.5 mb-4">
                         {exp.bullets.map((b, j) => (
                           <li key={j} className="flex gap-2 text-slate-400 text-sm leading-relaxed">
-                            <span className="text-[#00d4ff] mt-0.5 shrink-0">›</span>
+                            <span className="text-[#4f8ef7] mt-0.5 shrink-0">›</span>
                             {b}
                           </li>
                         ))}
@@ -233,13 +233,13 @@ export default function Timeline() {
                   {/* Center Dot - desktop */}
                   <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center justify-center w-5 h-5 z-10">
                     <div
-                      className={`w-4 h-4 rounded-full ${c.dot} ring-4 ring-[#020b18]`}
+                      className={`w-4 h-4 rounded-full ${c.dot} ring-4 ring-[#060912]`}
                     />
                   </div>
 
                   {/* Mobile Dot */}
                   <div className="lg:hidden absolute left-4 -translate-x-1/2 top-7 z-10">
-                    <div className={`w-3 h-3 rounded-full ${c.dot} ring-2 ring-[#020b18]`} />
+                    <div className={`w-3 h-3 rounded-full ${c.dot} ring-2 ring-[#060912]`} />
                   </div>
 
                   {/* Empty side spacer for desktop */}

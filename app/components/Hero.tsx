@@ -10,7 +10,7 @@ const roles = [
 ]
 
 const stats = [
-  { value: '5+', label: 'Years Experience' },
+  { value: '2+', label: 'Years Experience' },
   { value: '98%', label: 'Model Accuracy' },
   { value: '5+', label: 'Certifications' },
 ]
@@ -56,29 +56,29 @@ export default function Hero() {
 
       {/* Animated Orbs */}
       <div
-        className="orb orb-cyan w-[600px] h-[600px] top-[-10%] left-[-15%]"
+        className="orb orb-blue w-[600px] h-[600px] top-[-10%] left-[-15%]"
         style={{ animationDelay: '0s' }}
       />
       <div
-        className="orb orb-purple w-[500px] h-[500px] top-[20%] right-[-10%]"
+        className="orb orb-gold w-[500px] h-[500px] top-[20%] right-[-10%]"
         style={{ animationDelay: '2.5s' }}
       />
       <div
-        className="orb orb-green w-[350px] h-[350px] bottom-[5%] left-[30%]"
+        className="orb orb-silver w-[350px] h-[350px] bottom-[5%] left-[30%]"
         style={{ animationDelay: '5s' }}
       />
       <div
-        className="orb orb-cyan w-[280px] h-[280px] bottom-[15%] right-[15%]"
+        className="orb orb-blue w-[280px] h-[280px] bottom-[15%] right-[15%]"
         style={{ animationDelay: '1.5s', animationDuration: '10s' }}
       />
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-24 pb-32">
         {/* Available Badge */}
-        <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full glass-card mb-10 border border-[rgba(0,255,136,0.2)]">
+        <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full glass-card mb-10 border border-[rgba(148,163,184,0.2)]">
           <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff88] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00ff88]" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#94a3b8] opacity-75" />
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#94a3b8]" />
           </span>
           <span className="text-sm font-medium text-slate-300">
             Available for opportunities&nbsp;&middot;&nbsp;Brisbane, QLD
@@ -95,7 +95,7 @@ export default function Hero() {
 
         {/* Typing Role */}
         <div className="h-10 flex items-center justify-center mb-6">
-          <p className="text-xl sm:text-2xl font-heading font-semibold text-[#00d4ff]">
+          <p className="text-xl sm:text-2xl font-heading font-semibold text-[#4f8ef7]">
             {displayed}
             <span className="cursor" />
           </p>
@@ -145,7 +145,7 @@ export default function Hero() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500">
         <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-10 bg-gradient-to-b from-[#00d4ff] to-transparent animate-pulse" />
+        <div className="w-px h-10 bg-gradient-to-b from-[#4f8ef7] to-transparent animate-pulse" />
       </div>
     </section>
   )

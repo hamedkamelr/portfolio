@@ -18,9 +18,9 @@ const contactCards = [
     value: 'hamed.kamel35@gmail.com',
     href: 'mailto:hamed.kamel35@gmail.com',
     color: 'cyan',
-    border: 'border-[rgba(0,212,255,0.2)] hover:border-[rgba(0,212,255,0.5)]',
-    iconBg: 'bg-[rgba(0,212,255,0.1)] text-[#00d4ff]',
-    glow: 'hover:shadow-[0_0_30px_rgba(0,212,255,0.12)]',
+    border: 'border-[rgba(79,142,247,0.2)] hover:border-[rgba(79,142,247,0.5)]',
+    iconBg: 'bg-[rgba(79,142,247,0.1)] text-[#4f8ef7]',
+    glow: 'hover:shadow-[0_0_30px_rgba(79,142,247,0.12)]',
   },
   {
     icon: (
@@ -57,9 +57,9 @@ const contactCards = [
     value: 'Greater Brisbane Area, QLD',
     href: '#',
     color: 'purple',
-    border: 'border-[rgba(124,58,237,0.2)] hover:border-[rgba(124,58,237,0.5)]',
-    iconBg: 'bg-[rgba(124,58,237,0.1)] text-[#a78bfa]',
-    glow: 'hover:shadow-[0_0_30px_rgba(124,58,237,0.12)]',
+    border: 'border-[rgba(212,168,67,0.2)] hover:border-[rgba(212,168,67,0.5)]',
+    iconBg: 'bg-[rgba(212,168,67,0.1)] text-[#d4a843]',
+    glow: 'hover:shadow-[0_0_30px_rgba(212,168,67,0.12)]',
   },
 ]
 
@@ -82,7 +82,7 @@ export default function Contact() {
 
   return (
     <>
-      <section id="contact" ref={sectionRef} className="py-28 px-6 bg-[rgba(0,212,255,0.015)]">
+      <section id="contact" ref={sectionRef} className="py-28 px-6 bg-[rgba(79,142,247,0.015)]">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
@@ -148,10 +148,10 @@ export default function Contact() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-[rgba(0,212,255,0.08)] py-8 px-6">
+      <footer className="border-t border-[rgba(79,142,247,0.08)] py-8 px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg flex items-center justify-center font-heading font-bold text-xs text-white bg-gradient-to-br from-[#00d4ff] to-[#7c3aed]">
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center font-heading font-bold text-xs text-white bg-gradient-to-br from-[#4f8ef7] to-[#d4a843]">
               HKR
             </div>
             <span className="text-slate-500 text-sm">
@@ -161,7 +161,7 @@ export default function Contact() {
           <div className="flex items-center gap-6">
             <a
               href="mailto:hamed.kamel35@gmail.com"
-              className="text-slate-500 hover:text-[#00d4ff] text-sm transition-colors"
+              className="text-slate-500 hover:text-[#4f8ef7] text-sm transition-colors"
             >
               Email
             </a>
@@ -169,7 +169,7 @@ export default function Contact() {
               href="https://linkedin.com/in/hamedkamel"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-500 hover:text-[#00d4ff] text-sm transition-colors"
+              className="text-slate-500 hover:text-[#4f8ef7] text-sm transition-colors"
             >
               LinkedIn
             </a>

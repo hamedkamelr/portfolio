@@ -19,7 +19,7 @@
 
 ## Overview
 
-A modern, single-page portfolio website with an **enterprise meets edgy** design — dark navy background, electric cyan/purple gradient accents, glassmorphism cards, and scroll-triggered animations.
+A modern, single-page portfolio website with a **professional dark** design — deep navy background, blue/gold gradient accents, glassmorphism cards, and scroll-triggered animations.
 
 Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and styled with **Tailwind CSS**. Includes a fully local AI chatbot that runs in the browser with no API key required.
 
@@ -53,10 +53,16 @@ Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and style
 
 ## Getting Started
 
+Visit the live site: **[https://portfolio-jade-omega-5owes53s9t.vercel.app](https://portfolio-jade-omega-5owes53s9t.vercel.app)**
 
-visit the live site: **[https://portfolio-jade-omega-5owes53s9t.vercel.app](https://portfolio-jade-omega-5owes53s9t.vercel.app)**
+Or run locally:
 
-local development, [http://localhost:3001](http://localhost:3001) 
+```bash
+npm install
+npm run dev
+```
+
+Then open **[http://localhost:3001](http://localhost:3001)** in your browser.
 
 ---
 

@@ -25,7 +25,7 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'backdrop-blur-xl bg-[rgba(2,11,24,0.85)] border-b border-[rgba(0,212,255,0.12)] shadow-[0_4px_30px_rgba(0,212,255,0.06)]'
+          ? 'backdrop-blur-xl bg-[rgba(6,9,18,0.85)] border-b border-[rgba(79,142,247,0.12)] shadow-[0_4px_30px_rgba(79,142,247,0.06)]'
           : 'bg-transparent'
       }`}
     >
@@ -33,7 +33,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo + Name */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center font-heading font-bold text-sm text-white bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] shadow-[0_0_16px_rgba(0,212,255,0.35)] transition-all duration-300 group-hover:shadow-[0_0_24px_rgba(0,212,255,0.55)] group-hover:scale-105">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center font-heading font-bold text-sm text-white bg-gradient-to-br from-[#4f8ef7] to-[#d4a843] shadow-[0_0_16px_rgba(79,142,247,0.35)] transition-all duration-300 group-hover:shadow-[0_0_24px_rgba(79,142,247,0.55)] group-hover:scale-105">
               HKR
             </div>
             <span className="hidden sm:block font-heading font-semibold text-white text-base">
@@ -67,17 +67,17 @@ export default function Navigation() {
             aria-label="Toggle menu"
           >
             <span
-              className={`block w-6 h-0.5 bg-[#00d4ff] transition-all duration-300 ${
+              className={`block w-6 h-0.5 bg-[#4f8ef7] transition-all duration-300 ${
                 mobileOpen ? 'rotate-45 translate-y-2' : ''
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-[#00d4ff] transition-all duration-300 ${
+              className={`block w-6 h-0.5 bg-[#4f8ef7] transition-all duration-300 ${
                 mobileOpen ? 'opacity-0' : ''
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-[#00d4ff] transition-all duration-300 ${
+              className={`block w-6 h-0.5 bg-[#4f8ef7] transition-all duration-300 ${
                 mobileOpen ? '-rotate-45 -translate-y-2' : ''
               }`}
             />
@@ -90,13 +90,13 @@ export default function Navigation() {
             mobileOpen ? 'max-h-96 pb-6' : 'max-h-0'
           }`}
         >
-          <div className="flex flex-col gap-1 pt-2 border-t border-[rgba(0,212,255,0.1)]">
+          <div className="flex flex-col gap-1 pt-2 border-t border-[rgba(79,142,247,0.1)]">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="px-3 py-2.5 rounded-lg text-slate-300 hover:text-[#00d4ff] hover:bg-[rgba(0,212,255,0.06)] transition-all font-medium text-sm"
+                className="px-3 py-2.5 rounded-lg text-slate-300 hover:text-[#4f8ef7] hover:bg-[rgba(79,142,247,0.06)] transition-all font-medium text-sm"
               >
                 {link.label}
               </a>

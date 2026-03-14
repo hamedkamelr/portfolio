@@ -57,8 +57,8 @@ const KB: Record<string, Intent> = {
       'employment', 'worked at', 'career journey', 'positions held', 'resume',
     ],
     responses: [
-      "Hamed has 5+ years of diverse experience:\n\n• **IT Support Analyst** — Dept of Transport & Main Roads (2025–Present)\n• **ICT Solution Analyst** — Tech Mahindra (2024–2025)\n• **ICT Student Services** — USQ (2022–2024)\n• **Student Researcher** — USQ, 98% accuracy AI model (2023)\n• **Business Development Associate** — Taban Infrastructure (2021–2022)\n• **Sales & Marketing Rep** — Samsung Electronics (2019–2020)",
-      "Hamed's career spans government IT, enterprise solutions, academic research, and business development:\n\n1. **Dept of Transport & Main Roads** — current IT analyst role in Brisbane\n2. **Tech Mahindra** — ICT solution design for enterprise clients\n3. **University of Southern Queensland** — IT services + AI deep-learning research\n4. **Taban Infrastructure** — business development & KPI analysis\n5. **Samsung Electronics** — sales & marketing representative",
+      "Hamed has 2+ years of professional IT experience:\n\n• **IT Support Analyst** — Dept of Transport & Main Roads (2025–Present)\n• **ICT Solution Analyst** — Tech Mahindra (2024–2025)\n• **ICT Student Services** — USQ (2022–2024)\n• **Student Researcher** — USQ, 98% accuracy AI model (2023)\n• **Business Development Associate** — Taban Infrastructure (2021–2022)",
+      "Hamed's career spans government IT, enterprise solutions, academic research, and business development:\n\n1. **Dept of Transport & Main Roads** — current IT Support Analyst role in Brisbane\n2. **Tech Mahindra** — ICT solution design for enterprise clients\n3. **University of Southern Queensland** — IT services & AI deep-learning research\n4. **Taban Infrastructure** — business development & KPI analysis",
     ],
   },
   skills: {
@@ -352,21 +352,21 @@ export default function Chatbot() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
       {/* Chat Panel */}
       <div
-        className={`mb-4 w-[360px] sm:w-[400px] rounded-2xl overflow-hidden shadow-2xl border border-[rgba(0,212,255,0.2)] transition-all duration-300 origin-bottom-right ${
+        className={`mb-4 w-[360px] sm:w-[400px] rounded-2xl overflow-hidden shadow-2xl border border-[rgba(79,142,247,0.2)] transition-all duration-300 origin-bottom-right ${
           isOpen
             ? 'opacity-100 scale-100 pointer-events-auto'
             : 'opacity-0 scale-95 pointer-events-none'
         }`}
-        style={{ background: 'rgba(4, 13, 26, 0.97)', backdropFilter: 'blur(24px)' }}
+        style={{ background: 'rgba(6, 9, 18, 0.97)', backdropFilter: 'blur(24px)' }}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-[rgba(0,212,255,0.08)] to-[rgba(124,58,237,0.08)] border-b border-[rgba(0,212,255,0.12)] px-4 py-3 flex items-center justify-between">
+        <div className="bg-gradient-to-r from-[rgba(79,142,247,0.08)] to-[rgba(212,168,67,0.08)] border-b border-[rgba(79,142,247,0.12)] px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative">
-              <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center text-xs font-bold text-white font-heading">
+              <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#4f8ef7] to-[#d4a843] flex items-center justify-center text-xs font-bold text-white font-heading">
                 HKR
               </div>
-              <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[#00ff88] border-2 border-[#040d1a]" />
+              <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[#94a3b8] border-2 border-[#060912]" />
             </div>
             <div>
               <div className="text-sm font-semibold text-white font-heading">Ask About Hamed</div>
@@ -390,7 +390,7 @@ export default function Chatbot() {
           {messages.length === 0 && (
             <div className="space-y-4">
               <div className="flex gap-2.5 items-start">
-                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center text-[10px] font-bold text-white shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#4f8ef7] to-[#d4a843] flex items-center justify-center text-[10px] font-bold text-white shrink-0 mt-0.5">
                   AI
                 </div>
                 <div className="bg-white/[0.05] rounded-2xl rounded-tl-sm px-3.5 py-2.5 max-w-[85%]">
@@ -405,7 +405,7 @@ export default function Chatbot() {
                   <button
                     key={s}
                     onClick={() => sendMessage(s)}
-                    className="text-xs px-3 py-1.5 rounded-full border border-[rgba(0,212,255,0.2)] text-[#00d4ff] bg-[rgba(0,212,255,0.05)] hover:bg-[rgba(0,212,255,0.12)] hover:border-[rgba(0,212,255,0.4)] transition-all"
+                    className="text-xs px-3 py-1.5 rounded-full border border-[rgba(79,142,247,0.2)] text-[#4f8ef7] bg-[rgba(79,142,247,0.05)] hover:bg-[rgba(79,142,247,0.12)] hover:border-[rgba(79,142,247,0.4)] transition-all"
                   >
                     {s}
                   </button>
@@ -421,14 +421,14 @@ export default function Chatbot() {
               className={`flex gap-2.5 items-start ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}
             >
               {msg.role === 'assistant' && (
-                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center text-[10px] font-bold text-white shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#4f8ef7] to-[#d4a843] flex items-center justify-center text-[10px] font-bold text-white shrink-0 mt-0.5">
                   AI
                 </div>
               )}
               <div
                 className={`rounded-2xl px-3.5 py-2.5 max-w-[82%] text-sm leading-relaxed whitespace-pre-line ${
                   msg.role === 'user'
-                    ? 'bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] text-white rounded-tr-sm'
+                    ? 'bg-gradient-to-br from-[#4f8ef7] to-[#d4a843] text-white rounded-tr-sm'
                     : 'bg-white/[0.05] text-slate-300 rounded-tl-sm'
                 }`}
               >
@@ -440,7 +440,7 @@ export default function Chatbot() {
           {/* Typing indicator */}
           {isTyping && (
             <div className="flex gap-2.5 items-start">
-              <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center text-[10px] font-bold text-white shrink-0 mt-0.5">
+              <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#4f8ef7] to-[#d4a843] flex items-center justify-center text-[10px] font-bold text-white shrink-0 mt-0.5">
                 AI
               </div>
               <div className="bg-white/[0.05] rounded-2xl rounded-tl-sm px-3.5 py-3">
@@ -461,8 +461,8 @@ export default function Chatbot() {
         </div>
 
         {/* Input */}
-        <div className="border-t border-[rgba(0,212,255,0.08)] px-3 py-3">
-          <div className="flex gap-2 items-end bg-white/[0.04] border border-[rgba(0,212,255,0.12)] rounded-xl px-3 py-2 focus-within:border-[rgba(0,212,255,0.35)] transition-colors">
+        <div className="border-t border-[rgba(79,142,247,0.08)] px-3 py-3">
+          <div className="flex gap-2 items-end bg-white/[0.04] border border-[rgba(79,142,247,0.12)] rounded-xl px-3 py-2 focus-within:border-[rgba(79,142,247,0.35)] transition-colors">
             <textarea
               ref={inputRef}
               value={input}
@@ -477,7 +477,7 @@ export default function Chatbot() {
             <button
               onClick={() => sendMessage()}
               disabled={!input.trim() || isTyping}
-              className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center shrink-0 hover:opacity-90 active:scale-95 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+              className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4f8ef7] to-[#d4a843] flex items-center justify-center shrink-0 hover:opacity-90 active:scale-95 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
               aria-label="Send message"
             >
               <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -498,16 +498,16 @@ export default function Chatbot() {
           <div
             className="flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold text-white whitespace-nowrap select-none pointer-events-none"
             style={{
-              background: 'rgba(4,13,26,0.92)',
-              border: '1px solid rgba(0,212,255,0.35)',
+              background: 'rgba(6,9,18,0.92)',
+              border: '1px solid rgba(79,142,247,0.35)',
               backdropFilter: 'blur(12px)',
-              boxShadow: '0 0 18px rgba(0,212,255,0.15)',
+              boxShadow: '0 0 18px rgba(79,142,247,0.15)',
               animation: 'fadeSlideIn 0.4s ease-out',
             }}
           >
             <span
-              className="w-2 h-2 rounded-full bg-[#00ff88] shrink-0"
-              style={{ boxShadow: '0 0 6px #00ff88', animation: 'pulse 2s ease-in-out infinite' }}
+              className="w-2 h-2 rounded-full bg-[#94a3b8] shrink-0"
+              style={{ boxShadow: '0 0 6px #94a3b8', animation: 'pulse 2s ease-in-out infinite' }}
             />
             Ask me anything
           </div>
@@ -524,7 +524,7 @@ export default function Chatbot() {
             <span
               className="absolute inset-0 rounded-full"
               style={{
-                background: 'rgba(0,212,255,0.2)',
+                background: 'rgba(79,142,247,0.2)',
                 animation: 'ping 2s cubic-bezier(0,0,0.2,1) infinite',
               }}
             />
@@ -534,10 +534,10 @@ export default function Chatbot() {
           <span
             className="absolute inset-0 rounded-full flex items-center justify-center"
             style={{
-              background: 'linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%)',
+              background: 'linear-gradient(135deg, #4f8ef7 0%, #d4a843 100%)',
               boxShadow: isOpen
-                ? '0 0 20px rgba(124,58,237,0.5), 0 4px 15px rgba(0,0,0,0.5)'
-                : '0 0 30px rgba(0,212,255,0.5), 0 0 60px rgba(0,212,255,0.2), 0 4px 20px rgba(0,0,0,0.5)',
+                ? '0 0 20px rgba(212,168,67,0.5), 0 4px 15px rgba(0,0,0,0.5)'
+                : '0 0 30px rgba(79,142,247,0.5), 0 0 60px rgba(79,142,247,0.2), 0 4px 20px rgba(0,0,0,0.5)',
             }}
           >
             {/* Close icon */}
@@ -569,7 +569,7 @@ export default function Chatbot() {
 
           {/* Unread dot */}
           {hasUnread && !isOpen && (
-            <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#00ff88] border-2 border-[#020b18] animate-pulse z-10" />
+            <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#4f8ef7] border-2 border-[#060912] animate-pulse z-10" />
           )}
         </button>
       </div>

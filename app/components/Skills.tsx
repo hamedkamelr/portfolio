@@ -69,19 +69,19 @@ const categories = [
 
 const colorMap: Record<string, { badge: string; card: string; dot: string }> = {
   cyan: {
-    badge: 'bg-[rgba(0,212,255,0.08)] border-[rgba(0,212,255,0.25)] text-[#00d4ff] hover:bg-[rgba(0,212,255,0.16)] hover:border-[rgba(0,212,255,0.5)]',
-    card: 'border-[rgba(0,212,255,0.25)] hover:border-[rgba(0,212,255,0.5)] hover:shadow-[0_0_20px_rgba(0,212,255,0.1)]',
-    dot: 'bg-[#00d4ff]',
+    badge: 'bg-[rgba(79,142,247,0.08)] border-[rgba(79,142,247,0.25)] text-[#4f8ef7] hover:bg-[rgba(79,142,247,0.16)] hover:border-[rgba(79,142,247,0.5)]',
+    card: 'border-[rgba(79,142,247,0.25)] hover:border-[rgba(79,142,247,0.5)] hover:shadow-[0_0_20px_rgba(79,142,247,0.1)]',
+    dot: 'bg-[#4f8ef7]',
   },
   purple: {
-    badge: 'bg-[rgba(124,58,237,0.08)] border-[rgba(124,58,237,0.25)] text-[#a78bfa] hover:bg-[rgba(124,58,237,0.16)] hover:border-[rgba(124,58,237,0.5)]',
-    card: 'border-[rgba(124,58,237,0.25)] hover:border-[rgba(124,58,237,0.5)] hover:shadow-[0_0_20px_rgba(124,58,237,0.1)]',
-    dot: 'bg-[#7c3aed]',
+    badge: 'bg-[rgba(212,168,67,0.08)] border-[rgba(212,168,67,0.25)] text-[#d4a843] hover:bg-[rgba(212,168,67,0.16)] hover:border-[rgba(212,168,67,0.5)]',
+    card: 'border-[rgba(212,168,67,0.25)] hover:border-[rgba(212,168,67,0.5)] hover:shadow-[0_0_20px_rgba(212,168,67,0.1)]',
+    dot: 'bg-[#d4a843]',
   },
   green: {
-    badge: 'bg-[rgba(0,255,136,0.08)] border-[rgba(0,255,136,0.25)] text-[#00ff88] hover:bg-[rgba(0,255,136,0.16)] hover:border-[rgba(0,255,136,0.5)]',
-    card: 'border-[rgba(0,255,136,0.25)] hover:border-[rgba(0,255,136,0.5)] hover:shadow-[0_0_20px_rgba(0,255,136,0.1)]',
-    dot: 'bg-[#00ff88]',
+    badge: 'bg-[rgba(148,163,184,0.08)] border-[rgba(148,163,184,0.25)] text-[#94a3b8] hover:bg-[rgba(148,163,184,0.16)] hover:border-[rgba(148,163,184,0.5)]',
+    card: 'border-[rgba(148,163,184,0.25)] hover:border-[rgba(148,163,184,0.5)] hover:shadow-[0_0_20px_rgba(148,163,184,0.1)]',
+    dot: 'bg-[#94a3b8]',
   },
   orange: {
     badge: 'bg-[rgba(251,146,60,0.08)] border-[rgba(251,146,60,0.25)] text-[#fb923c] hover:bg-[rgba(251,146,60,0.16)] hover:border-[rgba(251,146,60,0.5)]',
@@ -111,7 +111,7 @@ export default function Skills() {
   }, [])
 
   return (
-    <section id="skills" ref={sectionRef} className="py-28 px-6 bg-[rgba(0,212,255,0.015)]">
+    <section id="skills" ref={sectionRef} className="py-28 px-6 bg-[rgba(79,142,247,0.015)]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -135,8 +135,8 @@ export default function Skills() {
               onClick={() => setActiveTab(cat.id)}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border ${
                 activeTab === cat.id
-                  ? 'bg-gradient-to-r from-[#00d4ff] to-[#7c3aed] text-white border-transparent shadow-[0_0_16px_rgba(0,212,255,0.3)]'
-                  : 'glass-card text-slate-400 hover:text-white hover:border-[rgba(0,212,255,0.3)]'
+                  ? 'bg-gradient-to-r from-[#4f8ef7] to-[#d4a843] text-white border-transparent shadow-[0_0_16px_rgba(79,142,247,0.3)]'
+                  : 'glass-card text-slate-400 hover:text-white hover:border-[rgba(79,142,247,0.3)]'
               }`}
             >
               <span>{cat.icon}</span>

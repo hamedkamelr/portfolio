@@ -21,8 +21,8 @@ const projects: Project[] = [
       'Deep learning model leveraging convolutional neural networks to classify Alzheimer\'s disease stages from MRI brain scans. Built as part of a USQ research thesis with production-level accuracy.',
     tags: ['Python', 'TensorFlow', 'Keras', 'Computer Vision', 'Deep Learning', 'MRI Imaging'],
     status: 'Published Research',
-    statusColor: 'text-[#a78bfa] bg-[rgba(124,58,237,0.1)] border-[rgba(124,58,237,0.3)]',
-    gradient: 'from-[#7c3aed] to-[#00d4ff]',
+    statusColor: 'text-[#d4a843] bg-[rgba(212,168,67,0.1)] border-[rgba(212,168,67,0.3)]',
+    gradient: 'from-[#d4a843] to-[#4f8ef7]',
     highlight: '98% Accuracy',
   },
   {
@@ -32,8 +32,8 @@ const projects: Project[] = [
       'End-to-end voice agent powered by LLMs and RAG architecture. Integrates with external APIs and Webhooks to handle dynamic conversational flows for enterprise automation use cases.',
     tags: ['LLMs', 'RAG', 'Voice AI', 'APIs', 'Webhooks', 'Python'],
     status: 'Live Project',
-    statusColor: 'text-[#00d4ff] bg-[rgba(0,212,255,0.1)] border-[rgba(0,212,255,0.3)]',
-    gradient: 'from-[#00d4ff] to-[#00ff88]',
+    statusColor: 'text-[#4f8ef7] bg-[rgba(79,142,247,0.1)] border-[rgba(79,142,247,0.3)]',
+    gradient: 'from-[#4f8ef7] to-[#94a3b8]',
   },
   {
     icon: '📊',
@@ -43,7 +43,7 @@ const projects: Project[] = [
     tags: ['Power BI', 'DAX', 'KPI Analysis', 'Data Modelling', 'Business Intelligence'],
     status: 'Delivered',
     statusColor: 'text-[#fb923c] bg-[rgba(251,146,60,0.1)] border-[rgba(251,146,60,0.3)]',
-    gradient: 'from-[#fb923c] to-[#7c3aed]',
+    gradient: 'from-[#fb923c] to-[#d4a843]',
   },
   {
     icon: '🔄',
@@ -52,8 +52,8 @@ const projects: Project[] = [
       'Scalable ETL pipeline ingesting, transforming, and loading structured and unstructured data from multiple sources into analytical stores for downstream BI reporting and ML workflows.',
     tags: ['Python', 'ETL', 'Data Pipelines', 'Automation', 'Azure'],
     status: 'Operational',
-    statusColor: 'text-[#00ff88] bg-[rgba(0,255,136,0.1)] border-[rgba(0,255,136,0.3)]',
-    gradient: 'from-[#00ff88] to-[#00d4ff]',
+    statusColor: 'text-[#94a3b8] bg-[rgba(148,163,184,0.1)] border-[rgba(148,163,184,0.3)]',
+    gradient: 'from-[#94a3b8] to-[#4f8ef7]',
   },
   {
     icon: '🏢',
@@ -63,7 +63,7 @@ const projects: Project[] = [
     tags: ['Azure AD', 'Intune', 'Exchange Online', 'SharePoint', 'M365', 'IT Operations'],
     status: 'Ongoing',
     statusColor: 'text-[#60a5fa] bg-[rgba(96,165,250,0.1)] border-[rgba(96,165,250,0.3)]',
-    gradient: 'from-[#1d4ed8] to-[#7c3aed]',
+    gradient: 'from-[#1d4ed8] to-[#4f8ef7]',
   },
   {
     icon: '🚀',
@@ -95,7 +95,7 @@ export default function Portfolio() {
   }, [])
 
   return (
-    <section id="portfolio" ref={sectionRef} className="py-28 px-6 bg-[rgba(124,58,237,0.015)]">
+    <section id="portfolio" ref={sectionRef} className="py-28 px-6 bg-[rgba(212,168,67,0.015)]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -129,8 +129,8 @@ export default function Portfolio() {
                     {project.highlight}
                   </div>
                 )}
-                <div className="absolute inset-0 bg-[#020b18] opacity-30" />
-                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[rgba(2,11,24,0.8)] to-transparent" />
+                <div className="absolute inset-0 bg-[#060912] opacity-30" />
+                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[rgba(6,9,18,0.8)] to-transparent" />
               </div>
 
               {/* Body */}
@@ -142,7 +142,7 @@ export default function Portfolio() {
                   {project.status}
                 </span>
 
-                <h3 className="font-heading font-bold text-white text-base mb-2 group-hover:text-[#00d4ff] transition-colors duration-200">
+                <h3 className="font-heading font-bold text-white text-base mb-2 group-hover:text-[#4f8ef7] transition-colors duration-200">
                   {project.title}
                 </h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-5 flex-1">
