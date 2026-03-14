@@ -62,7 +62,7 @@ npm install
 npm run dev
 ```
 
-Localhost **[http://localhost:3001](http://localhost:3001)** 
+Localhost [http://localhost:3001](http://localhost:3001)
 ---
 
 ## Project Structure
