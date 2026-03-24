@@ -2,6 +2,7 @@
 
 # Hamed Kamel Rahimi — Portfolio
 
+
 **IT Specialist · AI & Automation Enthusiast · Greater Brisbane, QLD**
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)](https://nextjs.org)
