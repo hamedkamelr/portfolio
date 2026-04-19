@@ -1,141 +1,114 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-
-const roles = [
-  'AI Engineer',
-  'IT Specialist',
-  'AI & Automation Enthusiast',
-  'Cloud Solutions Expert',
-  'Data Analytics Expert',
-]
-
-const stats = [
-  { value: '2+', label: 'Years Experience' },
-  { value: '98%', label: 'Model Accuracy' },
-  { value: '5+', label: 'Certifications' },
-]
+import { useEffect, useRef } from 'react'
 
 export default function Hero() {
-  const [roleIndex, setRoleIndex] = useState(0)
-  const [displayed, setDisplayed] = useState('')
-  const [typing, setTyping] = useState(true)
+  const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
-    const current = roles[roleIndex]
-
-    if (typing) {
-      if (displayed.length < current.length) {
-        const timeout = setTimeout(() => {
-          setDisplayed(current.slice(0, displayed.length + 1))
-        }, 60)
-        return () => clearTimeout(timeout)
-      } else {
-        const pause = setTimeout(() => setTyping(false), 2200)
-        return () => clearTimeout(pause)
-      }
-    } else {
-      if (displayed.length > 0) {
-        const timeout = setTimeout(() => {
-          setDisplayed(displayed.slice(0, -1))
-        }, 35)
-        return () => clearTimeout(timeout)
-      } else {
-        setRoleIndex((i) => (i + 1) % roles.length)
-        setTyping(true)
-      }
-    }
-  }, [displayed, typing, roleIndex])
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('visible')
+        })
+      },
+      { threshold: 0.1 }
+    )
+    const elements = sectionRef.current?.querySelectorAll('.reveal')
+    elements?.forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      ref={sectionRef}
+      className="min-h-screen flex items-center justify-center py-[120px_0_80px]"
     >
-      {/* Dot Grid Background */}
-      <div className="absolute inset-0 dot-grid opacity-60 pointer-events-none" />
+      <div className="max-w-[1100px] mx-auto px-6">
+        <div className="hero-card glass reveal text-center py-[60px] px-[50px] max-w-[720px] mx-auto relative">
+          {/* Photo */}
+          <img
+            src="/photo.jpg"
+            alt="Hamed Kamel Rahimi"
+            className="hero-photo"
+          />
 
-      {/* Animated Orbs */}
-      <div
-        className="orb orb-blue w-[600px] h-[600px] top-[-10%] left-[-15%]"
-        style={{ animationDelay: '0s' }}
-      />
-      <div
-        className="orb orb-gold w-[500px] h-[500px] top-[20%] right-[-10%]"
-        style={{ animationDelay: '2.5s' }}
-      />
-      <div
-        className="orb orb-silver w-[350px] h-[350px] bottom-[5%] left-[30%]"
-        style={{ animationDelay: '5s' }}
-      />
-      <div
-        className="orb orb-blue w-[280px] h-[280px] bottom-[15%] right-[15%]"
-        style={{ animationDelay: '1.5s', animationDuration: '10s' }}
-      />
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-24 pb-32">
-        {/* Name */}
-        <h1 className="font-heading font-extrabold text-5xl sm:text-7xl lg:text-8xl leading-[1.05] mb-6">
-          <span className="text-white">Hamed </span>
-          <span className="gradient-text">Kamel</span>
-          <br />
-          <span className="text-white">Rahimi</span>
-        </h1>
-
-        {/* Typing Role */}
-        <div className="h-10 flex items-center justify-center mb-6">
-          <p className="text-xl sm:text-2xl font-heading font-semibold text-[#4f8ef7]">
-            {displayed}
-            <span className="cursor" />
+          {/* Greeting */}
+          <p className="font-heading text-[0.95rem] font-medium text-[#0d9488] tracking-[0.15em] uppercase mb-4">
+            Hello, I&apos;m
           </p>
-        </div>
 
-        {/* Tagline */}
-        <p className="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg leading-relaxed mb-10">
-          Bridging enterprise IT infrastructure and cutting-edge AI — from cloud
-          orchestration to deep learning models, I build solutions that{' '}
-          <span className="text-slate-200 font-medium">actually work</span>.
-        </p>
+          {/* Name */}
+          <h1
+            className="font-heading font-extrabold leading-[1.1] mb-2"
+            style={{
+              fontSize: 'clamp(2.2rem, 5vw, 3.8rem)',
+              letterSpacing: '-0.03em',
+              background: 'linear-gradient(135deg, #ffffff 0%, #e8e0f0 40%, #c4b5d8 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
+          >
+            Hamed Kamel
+            <span className="block">Rahimi</span>
+          </h1>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-20">
-          <a href="#portfolio" className="btn-primary">
-            <span>Explore My Work</span>
-            <svg
-              className="w-4 h-4 relative z-10"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Title */}
+          <p
+            className="font-heading font-normal mt-4 mb-6"
+            style={{
+              fontSize: 'clamp(1rem, 2.5vw, 1.35rem)',
+              color: 'rgba(232, 224, 240, 0.65)',
+              letterSpacing: '0.01em',
+            }}
+          >
+            IT Specialist &amp; <em className="not-italic font-semibold gradient-text">AI Engineer</em>
+          </p>
+
+          {/* Tagline */}
+          <p className="text-[1.05rem] text-[rgba(232,224,240,0.9)] max-w-[500px] mx-auto mb-9 leading-[1.7]">
+            Bridging enterprise IT infrastructure and cutting-edge AI — from cloud orchestration to deep learning models, I build solutions that actually work.
+          </p>
+
+          {/* Social Links */}
+          <div className="flex gap-4 justify-center flex-wrap">
+            <a
+              href="https://github.com/hamed-kamelr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 py-2.5 px-[22px] rounded-xl font-heading text-[0.85rem] font-medium no-underline text-[#e8e0f0] bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-300 hover:bg-[rgba(255,255,255,0.12)] hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-0.5"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
+              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/hamedkamel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 py-2.5 px-[22px] rounded-xl font-heading text-[0.85rem] font-medium no-underline text-[#e8e0f0] bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-300 hover:bg-[rgba(255,255,255,0.12)] hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-0.5"
+            >
+              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.836 0-9.753h3.554v1.383c.43-.664 1.199-1.61 2.919-1.61 2.135 0 3.74 1.398 3.74 4.402v5.578zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.955.77-1.715 1.914-1.715.145 0 .287.01.424.03 1.144 0 1.914.76 1.914 1.715 0 .953-.771 1.715-1.915 1.715zm1.6 11.597H3.738V9.567h3.199v10.885zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+          {/* Scroll Hint */}
+          <div
+            className="absolute -bottom-[60px] left-1/2 flex flex-col items-center gap-2 text-[rgba(232,224,240,0.55)] text-[0.75rem] font-heading tracking-[0.1em]"
+            style={{ animation: 'scrollHint 2.5s ease-in-out infinite' }}
+          >
+            <span>SCROLL</span>
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+              <path d="M12 5v14M19 12l-7 7-7-7" />
             </svg>
-          </a>
-          <a href="#contact" className="btn-outline">
-            Get in Touch
-          </a>
+          </div>
         </div>
-
-        {/* Stats */}
-        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16">
-          {stats.map((stat, i) => (
-            <div key={i} className="text-center">
-              <div className="stat-number">{stat.value}</div>
-              <div className="text-slate-500 text-sm mt-1 font-medium">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500">
-        <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-10 bg-gradient-to-b from-[#4f8ef7] to-transparent animate-pulse" />
       </div>
     </section>
   )
