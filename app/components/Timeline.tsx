@@ -15,6 +15,21 @@ type TimelineItem = {
 
 const experiences: TimelineItem[] = [
   {
+    company: 'Container for Exchange (COEX)',
+    role: 'System Analyst',
+    period: 'May 2026 – Current',
+    location: 'Brisbane, QLD',
+    bullets: [
+      'Partner with business stakeholders to identify process inefficiencies and design automated solutions using Microsoft Forms and Power Automate.',
+      'Develop AI-powered knowledge solutions using Azure AI services, Copilot, and SharePoint, improving self-service access to information while maintaining secure, role-based access.',
+      'Design and implement automated workflows integrating shared mailboxes with Dynamics 365 — using business rules and Power Automate to capture enquiries and automatically create and route leads, improving process efficiency and response times.',
+      'Establish and maintain Confluence as a central source of truth for documentation, workflows, and solution designs, improving knowledge sharing and consistency across enterprise implementations.',
+    ],
+    tags: ['Power Automate', 'Azure AI', 'Copilot', 'SharePoint', 'Dynamics 365', 'Confluence'],
+    color: 'cyan',
+    current: true,
+  },
+  {
     company: 'Dept of Transport and Main Roads',
     role: 'IT Support Analyst',
     period: 'Feb 2025 – Mar 2026',
@@ -25,8 +40,7 @@ const experiences: TimelineItem[] = [
       'Administer Microsoft 365, Entra ID, and Active Directory for hundreds of users across Queensland, managing access control, group permissions, and endpoint configuration at scale.',
     ],
     tags: ['Power Automate', 'Microsoft Copilot', 'M365', 'Entra ID', 'Automation', 'AI Tools'],
-    color: 'cyan',
-    current: true,
+    color: 'purple',
   },
   {
     company: 'Tech Mahindra',
@@ -86,11 +100,11 @@ const experiences: TimelineItem[] = [
     period: 'Feb 2021 – Jan 2022',
     location: 'Remote',
     bullets: [
-      'Analysed market KPIs and competitive data to inform growth strategy, building structured reporting frameworks for senior leadership.',
-      'Identified inefficiencies in reporting processes and introduced semi-automated approaches to reduce manual data consolidation effort.',
-      'Produced data-driven business documentation, laying groundwork for more scalable, insight-led decision-making across the organisation.',
+      'Led discovery and feasibility analysis for an ERP implementation, mapping existing business processes and workflows across the organisation to identify system requirements and gaps.',
+      'Evaluated ERP solution options against business needs, weighing cost, scalability, and integration fit, and packaged the findings into a feasibility report and recommendation for senior leadership.',
+      'Recommendation was adopted by leadership — establishing the business case and roadmap that kicked off the organisation\'s ERP adoption.',
     ],
-    tags: ['Business Analysis', 'KPI Reporting', 'Data Analysis', 'Process Improvement'],
+    tags: ['ERP', 'Feasibility Study', 'Business Process Mapping', 'Business Analysis', 'Stakeholder Management'],
     color: 'purple',
   },
 ]

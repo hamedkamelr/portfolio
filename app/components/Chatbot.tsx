@@ -38,7 +38,7 @@ const KB: Record<string, Intent> = {
     ],
     responses: [
       "Hamed Kamel Rahimi is an IT Specialist and AI & Automation Enthusiast based in Greater Brisbane, QLD. He bridges enterprise IT infrastructure with cutting-edge AI — from managing Azure cloud environments to building deep-learning models with 98% accuracy. He's passionate about solving real-world problems with technology and loves connecting with new people.",
-      "Hamed is a tech professional with a unique blend of enterprise IT expertise and hands-on AI/ML experience. Currently an IT Support Analyst with the Queensland Government, he also has a Master's in Data Science and has built everything from voice agents using LLMs to Alzheimer's prediction models. He's a fast learner who thrives in fast-paced environments.",
+      "Hamed is a tech professional with a unique blend of enterprise IT expertise and hands-on AI/ML experience. Currently a System Analyst at Container for Exchange (COEX), he also has a Master's in Data Science and has built everything from voice agents using LLMs to Alzheimer's prediction models. He's a fast learner who thrives in fast-paced environments.",
     ],
   },
   current_role: {
@@ -47,8 +47,8 @@ const KB: Record<string, Intent> = {
       'present job', 'now working', 'present role', 'current position', 'working now',
     ],
     responses: [
-      "Hamed is currently an **IT Support Analyst** at the Department of Transport and Main Roads in Brisbane, QLD (February 2025 – Present). He manages Azure Active Directory, Microsoft Intune, Microsoft Exchange, and drives IT service improvements within Agile frameworks — supporting critical Queensland government infrastructure.",
-      "Right now, Hamed works as an **IT Support Analyst** at Queensland's Department of Transport and Main Roads. He handles enterprise IT support, endpoint management via Intune, Azure AD administration, and service improvement initiatives. He's been there since February 2025.",
+      "Hamed is currently a **System Analyst** at Container for Exchange (COEX) in Brisbane, QLD (May 2026 – Present). He partners with stakeholders to design automated solutions with Power Automate, builds AI-powered knowledge tools using Azure AI and Copilot, and integrates Dynamics 365 workflows — building on his prior IT Support Analyst role at the Department of Transport and Main Roads.",
+      "Right now, Hamed works as a **System Analyst** at Container for Exchange (COEX). He designs automation workflows with Power Automate and Dynamics 365, develops AI-powered knowledge solutions with Azure AI and Copilot, and maintains Confluence as a source of truth for documentation. He's been there since May 2026.",
     ],
   },
   experience: {
@@ -57,8 +57,8 @@ const KB: Record<string, Intent> = {
       'employment', 'worked at', 'career journey', 'positions held', 'resume',
     ],
     responses: [
-      "Hamed has 2+ years of professional IT experience:\n\n• **IT Support Analyst** — Dept of Transport & Main Roads (2025–Present)\n• **ICT Solution Analyst** — Tech Mahindra (2024–2025)\n• **ICT Student Services** — USQ (2022–2024)\n• **Student Researcher** — USQ, 98% accuracy AI model (2023)\n• **Business Development Associate** — Taban Infrastructure (2021–2022)",
-      "Hamed's career spans government IT, enterprise solutions, academic research, and business development:\n\n1. **Dept of Transport & Main Roads** — current IT Support Analyst role in Brisbane\n2. **Tech Mahindra** — ICT solution design for enterprise clients\n3. **University of Southern Queensland** — IT services & AI deep-learning research\n4. **Taban Infrastructure** — business development & KPI analysis",
+      "Hamed has 3+ years of professional IT experience:\n\n• **System Analyst** — Container for Exchange, COEX (2026–Present)\n• **IT Support Analyst** — Dept of Transport & Main Roads (2025–2026)\n• **ICT Solution Analyst** — Tech Mahindra (2024–2025)\n• **ICT Student Services** — USQ (2022–2024)\n• **Student Researcher** — USQ, 98% accuracy AI model (2023)\n• **Business Analyst** — Taban Infrastructure Co. (2021–2022), led ERP feasibility analysis",
+      "Hamed's career spans government IT, enterprise solutions, academic research, and business analysis:\n\n1. **Container for Exchange (COEX)** — current System Analyst role in Brisbane\n2. **Dept of Transport & Main Roads** — IT Support Analyst role in Brisbane\n3. **Tech Mahindra** — ICT solution design for enterprise clients\n4. **University of Southern Queensland** — IT services & AI deep-learning research\n5. **Taban Infrastructure Co.** — Business Analyst, led ERP feasibility discovery that leadership adopted",
     ],
   },
   skills: {
@@ -157,8 +157,8 @@ const KB: Record<string, Intent> = {
       'qld', 'city', 'country', 'live', 'reside',
     ],
     responses: [
-      "Hamed is based in the Greater Brisbane Area, Queensland, Australia. He currently works for the Queensland Government (Department of Transport and Main Roads).",
-      "He's in Brisbane, QLD, Australia — working in the Queensland government sector as an IT Support Analyst.",
+      "Hamed is based in the Greater Brisbane Area, Queensland, Australia. He currently works as a System Analyst at Container for Exchange (COEX).",
+      "He's in Brisbane, QLD, Australia — working as a System Analyst at Container for Exchange (COEX).",
     ],
   },
   publication: {

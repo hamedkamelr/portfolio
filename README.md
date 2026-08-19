@@ -10,7 +10,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-[Live Demo](https://portfolio-phi-sepia-33.vercel.app/) · [Report Bug](https://github.com/hamedkamelr/portfolio/issues) · [Contact](mailto:hamed.kamel35@gmail.com)
+[Live Demo](https://hamed-kamelr.github.io/) · [Report Bug](https://github.com/hamed-kamelr/portfolio/issues) · [Contact](mailto:hamed.kamel35@gmail.com)
 
 ![Portfolio Screenshot](public/screenshot.png)
 
@@ -53,7 +53,7 @@ Built with **Next.js 14 App Router**, fully typed with **TypeScript**, and style
 
 ## Getting Started
 
-Visit the live site: **[https://portfolio-phi-sepia-33.vercel.app/](https://portfolio-phi-sepia-33.vercel.app/)**
+Visit the live site: **[https://hamed-kamelr.github.io/](https://hamed-kamelr.github.io/)**
 
 Or run locally:
 
